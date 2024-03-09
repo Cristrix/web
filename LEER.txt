@@ -1,0 +1,2 @@
+1. Ejecutar el archivo llamado main porque ese vendría a hacer la página principal. 
+ 

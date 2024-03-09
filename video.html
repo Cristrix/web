@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video Estilizado</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('img/fmain.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+        .ref-button,
+        .menu-button,
+        .regresar-button {
+            color: #FFF;
+            border: 2px solid rgb(216, 2, 134);
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #1A5276;
+            box-shadow: inset 0 0 0 0 #D80286;
+            transition: box-shadow ease-out 0.4s;
+            position: absolute;
+        }
+
+        .menu-button {
+            top: 5px;
+            left: 10px;
+        }
+
+        .regresar-button {
+            top: 600px;
+            right: 10px;
+        }
+        .ref-button {
+            top: 5px;
+            left: 1180px;
+        }
+
+        .ref-button:hover, 
+        .menu-button:hover,
+        .regresar-button:hover {
+            box-shadow: inset 0 100px 0 0 #D80286;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EL VIAJE DE LA VIDA</h1>
+    </header>
+
+    <main>
+        <video controls>
+            <source src="img/video.mp4" type="video/mp4">
+            Tu navegador no soporta el tag de video.
+        </video>
+    </main>
+
+    <!-- Botón de Menú -->
+    <button class="menu-button" onclick="window.location.href='index.html'">Menú</button>
+
+    <!-- Botón de Regresar -->
+    <button class="regresar-button" onclick="window.location.href='segmentacion.html'">Regresar</button>
+
+    
+    <button class="ref-button" onclick="window.location.href='ref.html'">Referencias</button>
+
+
+    
+
+</body>
+</html>
+
+

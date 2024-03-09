@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencia de EL VIAJE DE LA VIDA</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('img/fmain.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        .menu-button,
+        .regresar-button {
+            color: #FFF;
+            border: 2px solid rgb(216, 2, 134);
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #1A5276;
+            box-shadow: inset 0 0 0 0 #D80286;
+            transition: box-shadow ease-out 0.4s;
+            position: absolute;
+        }
+
+        .menu-button {
+            top: 20px;
+            left: 20px;
+        }
+
+        .regresar-button {
+            bottom: 20px;
+            right: 20px;
+            position: fixed;
+        }
+
+        .menu-button:hover,
+        .regresar-button:hover {
+            box-shadow: inset 0 100px 0 0 #D80286;
+        }
+
+        /* Tabla de Referencias */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #fff;
+        }
+
+        th {
+            background-color: #1A5276;
+            color: #fff;
+        }
+
+        td {
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>REFERENCIAS</h1>
+    </header>
+
+    <main>
+       
+
+        <!-- Tabla de Referencias -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Referencia</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Video</td>
+                    <td><a href="https://youtu.be/3GrYA7Jc9cs?si=cX-GRPAHcTim_9LQ" target="_blank">https://youtu.be/3GrYA7Jc9cs</a></td>
+                    <td>Video relacionado con "EL VIAJE DE LA VIDA"</td>
+                </tr>
+                <tr>
+                    <td>Libro</td>
+                    <td>Arteaga Martínez M., García Peláez I. Embriología Humana y Biología del Desarrollo. Ed. Méd Panamericana. 2ª. Ed. 2017</td>
+                    <td>Libro de referencia sobre embriología humana y biología del desarrollo.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Botón de Menú -->
+    <button class="menu-button" onclick="window.location.href='index.html'">Menú</button>
+
+    <!-- Botón de Regresar -->
+    <button class="regresar-button" onclick="window.location.href='video.html'">Regresar</button>
+
+</body>
+</html>

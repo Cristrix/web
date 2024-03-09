@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="shortcut icon" href="img/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMACIÓN DEL CIGOTO</title>
+  <link rel="stylesheet" type="text/css" href="styles/fcigoto.css">
+  <style>
+    body {
+      background-image: url('img/fmain.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #boton-segmentacion {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .imagen {
+      /* Agrega la clase .zoom a todas las imágenes */
+      transition: width 2s, height 2s, transform 2s; /* Transición suave durante 2 segundos */
+    }
+
+    .imagen:hover {
+      transform: scale(2); /* Aumenta al doble del tamaño original al pasar el mouse sobre la imagen */
+    }
+
+    .texto-imagen {
+      position: absolute;
+      top: 125%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 3px;
+      min-width: 200px;
+      text-align: center;
+      transition: opacity 0.5s ease; /* Transición suave de opacidad */
+      opacity: 1; /* Asegura que el texto esté visible inicialmente */
+    }
+
+    .imagen-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+      #botones button {
+    font-weight: bold; /* Aplica negrilla al texto de los botones */
+  }
+    #boton-regresar button {
+    font-weight: bold; /* Aplica negrilla al texto de los botones */
+  }
+    #boton-menu button {
+    font-weight: bold; /* Aplica negrilla al texto de los botones */
+  }
+    #boton-segmentacion button {
+    font-weight: bold; /* Aplica negrilla al texto de los botones */
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Texto antes de los botones -->
+  <div id="intro">
+    <p>FORMACIÓN DEL CIGOTO</p>
+    
+  </div>
+
+  <!-- Botones -->
+  <div id="botones">
+    <button onclick="mostrarImagen('f1', 'Ha terminado la fertilización y el espermatazoide se encuentra ya en el interior del óvulo.')">Etapa 1</button>
+    <button onclick="mostrarImagen('f2', 'Se han formado los pronúcleos masculino y femenino , comienzan a desplazarse uno hacia otro.')">Etapa 2</button>
+    <button onclick="mostrarImagen('f3', 'Los pronúcleos comienzan a fusionarse para constituir un único núcleo con 46 cromosomas. (46).')">Etapa 3</button>
+    <button onclick="mostrarImagen('f4', 'Se inicia la primera división mitótica.. ')">Etapa 4</button>
+  </div>
+  
+
+  <!-- Contenedor de la imagen y el texto -->
+  <div id="imagen-container">
+    <div class="imagen-wrapper">
+      <img class="imagen" id="imagen" src="" alt="">
+      <div id="texto-imagen" class="texto-imagen"></div>
+    </div>
+  </div>
+
+  <!-- Botón para regresar -->
+  <a id="boton-regresar" href="main.html">
+    <button>Regresar</button>
+  </a>
+
+  <!-- Botón para ir al menú -->
+  <a id="boton-menu" href="index.html">
+    <button>Menú</button>
+  </a>
+
+  <!-- Botón para la segmentación -->
+  <a id="boton-segmentacion" href="segmentacion.html">
+    <button>Segmentación</button>
+  </a>
+
+  <script src="js/fcigoto.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

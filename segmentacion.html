@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="shortcut icon" href="img/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEGMENTACIÓN</title>
+  <link rel="stylesheet" type="text/css" href="styles/segmentacion.css">
+  <style>
+    body {
+      background-image: url('img/fmain.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #boton-segmentacion {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .imagen {
+      /* Agrega la clase .zoom a todas las imágenes */
+      transition: width 2s, height 2s, transform 2s; /* Transición suave durante 2 segundos */
+    }
+
+    .imagen:hover {
+      transform: scale(2); /* Aumenta al doble del tamaño original al pasar el mouse sobre la imagen */
+    }
+
+    .texto-imagen {
+      position: absolute;
+      top: 150%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      min-width: 300px;
+      text-align: 1;
+      transition: opacity 0.5s ease; /* Transición suave de opacidad */
+      opacity: 1; /* Asegura que el texto esté visible inicialmente */
+    }
+
+    .imagen-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Texto antes de los botones -->
+  <div id="intro">
+    <p>SEGMENTACIÓN</p>
+  </div>
+
+  <!-- Botones -->
+  <div id="botones">
+    <button onclick="mostrarImagen('s1', 'Se ha formado ya el huso mitótico y está comenzando la primera división mitótica.')">Etapa 1</button>
+    <button onclick="mostrarImagen('s2', 'Etapa de dos células. Como resultado de la primera división celular se han formado los dos primeros blástemeros.')">Etapa 2</button>
+    <button onclick="mostrarImagen('s3', 'Etapa de cuatro células cada uno de los  blastómeros entra nuevamente en división y ya hay cuatro blastómeros. ')">Etapa 3</button>
+    <button onclick="mostrarImagen('s4', 'Etapa de ocho células ha ocurrido una nueva división mitotica y ya se observan ocho blastómeros; durante esta etapa ocurre el fenómeno de compactación, Proceso de segmentación. ')">Etapa 4</button>
+    <button onclick="mostrarImagen('s5', 'Etapa de mórula. Existen de 16 a 32 blastómeros que forman una esfera compacta parecida al fruto de la morera .')">Etapa 5</button>
+    <button onclick="mostrarImagen('s6', 'Etapa de blastocisto temprano. Los blastómeros se han distribuido formando una capa externa, el trofoblasto, y una capa interna, el embrioblasto. Entres estas tres capas se forma una cavidad, el blastocele Nótese que durante todo este proceso de segmentación el embrión está incluido dentro de la zona pelúcida.')">Etapa 6</button>
+  </div>
+  
+
+  
+
+  <!-- Contenedor de la imagen y el texto -->
+  <div id="imagen-container">
+    <div class="imagen-wrapper">
+      <img class="imagen" id="imagen" src="" alt="">
+      <div id="texto-imagen" class="texto-imagen"></div>
+    </div>
+  </div>
+
+  <!-- Botón para regresar -->
+  <a id="boton-regresar" href="fcigoto.html">
+    <button>Regresar</button>
+  </a>
+
+  <!-- Botón para ir al menú -->
+  <a id="boton-menu" href="index.html">
+    <button>Menú</button>
+  </a>
+<a id="boton-video" href="video.html">
+  <button>EL VIAJE DE LA VIDA</button>
+</a>
+
+  
+
+  
+  <script src="js/segmentacion.js"></script>
+</body>
+</html>
